@@ -1,0 +1,19 @@
+<ion-header class='header'>
+    <ion-toolbar>
+        <button class='menuFloat' left menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Wash Instructions</ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content class='washContent'>
+    <ul *ngIf='washDetails;else noResults'>
+        <li *ngFor='let washTip of washDetails.washInstructions'>
+            {{washTip}}</li>
+    </ul>
+    <ng-template #noResults>
+        <div class="noResults">
+            No Results Found
+        </div>
+    </ng-template>
+</ion-content>

@@ -1,0 +1,20 @@
+<div>
+    <loading-indicator></loading-indicator>
+    <ion-menu [content]="content">
+        <ion-content>
+            <ion-list class='menuItem washList' (click)='openPage("home")'>
+                <p>Home</p>
+            </ion-list>
+            <ion-list class='menuItem' (click)='openPage("washTips")'>
+                <p>Washing Instructions</p>
+            </ion-list>
+            <ion-list class='menuItem' (click)='openPage("styleTips")'>
+                    <p>Styling Tips</p>
+                </ion-list>
+            <ion-list class='menuItem' (click)='openPage("reviews")'>
+                <p>Reviews</p>
+            </ion-list>
+        </ion-content>
+    </ion-menu>
+    <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+</div>

@@ -1,0 +1,166 @@
+.login-container {
+     background-image: url("./../../assets/images/login-logo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    .scroll-content {
+        background: rgba(79, 14, 93, .6);
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        overflow-y: auto;
+        ion-grid {}
+    }
+    .custom-input {
+        border-radius: 0px!important;
+        input {
+            display: block;
+            width: 100%;
+            margin: 0px !important;
+            outline: 0 !important;
+        }
+    }
+    .login-align.row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .p_0 {
+        padding: 0;
+    }
+    .log-left {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background: #522e91;
+        padding: 70px 30px;
+        float: right;
+        width: 50%;
+        .cont {
+            text-align: right;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo {
+            color: #ffffff;
+            display: block;
+            font-size: 60px;
+        }
+        .logoContent {
+            color: #ffffff;
+            font-size: 50px;
+            text-align: left;
+            display: flex;
+            .bold {
+                font-weight: bold;
+            }
+        }
+    }
+    .log-right {
+        //  background: rgba(255, 255, 255, .9);
+        border-radius: 4px;
+        padding: 30px;
+        text-align: center;
+        width: 30%;
+        margin-top: 60%;
+        ion-list {
+            text-align: left;
+            position: relative;
+            border:none !important;
+        }
+        .list-ios > .item-block:first-child{
+            border: none !important;
+        }
+        input::placeholder {
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 100;
+        }
+        .error {
+            padding: 5px 0;
+            color: red;
+            font-size: 12px;
+            display: block;
+            line-height: 4px;
+            position: absolute;
+        }
+        button {
+            // font-family: 'Arial-BoldMT';
+            font-size: 16px;
+            border-radius: 20px;
+            height: 50px;
+            box-shadow: none;
+            background: #BB0C4A;
+            margin: 10px 0;
+        }
+        button:hover {
+            background-color: #979797 !important;
+        }
+        ion-item.item-input:last-child {
+            border-bottom: 0px !important;
+        }
+        .text-input-md {
+            line-height: 32px;
+        }
+        ion-item {
+            background: transparent;
+            padding-left: 0;
+            .item-inner {
+                padding-right: 0;
+                border-bottom: none!important;
+            }
+            ion-label {
+                font-size: 16px;
+                color: #522e91 !important;
+            }
+            ion-input {
+                border-radius: 4px; //  border: solid 1px #583593;
+                border-bottom:solid 1px #fff;
+                padding: 5px;
+                text-indent: 10px;
+                height: 50px;
+                color: #fff;
+                letter-spacing: 1px;
+            }
+            .input-wrapper {
+                display: inline-block;
+                .text-input-md {
+                    margin: 0px;
+                }
+            }
+        }
+        .foot {
+            font-size: 14px;
+            color: #cebbd2;
+            padding-top: 20px;
+            a {
+                color: #fff;
+                text-decoration: none;
+                // font-family: 'Arial-BoldMT';
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+        .head {
+            color: #522e91;
+            h2 {
+                font-family: 'Arial-BoldMT';
+                font-size: 30px;
+                margin-top: 0px;
+                text-align: left;
+                text-transform: none;
+            }
+        }
+    }
+    .copy-right {
+        font-size: 14px;
+        position: absolute;
+        bottom: 20px;
+        right: 0;
+        left: 0;
+        text-align: center;
+        color: #ffffff;
+    }
+}

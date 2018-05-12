@@ -1,0 +1,47 @@
+<ion-header>
+    <ion-toolbar>
+        <button class='menuFloat' left menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Style Instructions</ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <!-- <ul *ngIf='styleDetails;else noResults'>
+        <li *ngFor='let styleTip of styleDetails.styleInstructions'>
+            {{styleTip}}</li>
+    </ul> -->
+    <div *ngIf="urlNum === 3">
+        <img src='assets/images/id3garment1.jpg' />
+        <img src='assets/images/id3look1.jpg' />
+        <img src='assets/images/id3look2.jpg' />
+    </div>
+    <div *ngIf="urlNum === 4">
+        <img src='assets/images/garment1.jpg' />
+        <p class='imgDesc'>This look is smart, elegant, sophisticated, preppy. This can be worn in business parties, interviews, formal meeting
+            as well as corprate events. This look shouts out “More power to women</p>
+        <img src='assets/images/id4look1.jpg' />
+        <p class='imgDesc'>This look is casual, outgoing, trendy, playful and preppy. This can be worn in day outings , brunch, dates as well
+            as weekend parties and family dinner.</p>
+        <img src='assets/images/id4look2.jpg' />
+        <p class='imgDesc'>This look is Smart, elegant, preppy and defines smart casuals. This can be used as a daily office look. This look
+            is a casual take on formal corporate dressing. The A symmetric of the skirt adds drama to the look.</p>
+        <img src='assets/images/id4look3.jpg' />
+        <p class='imgDesc'> Sheek, Neat, classy silhouette paired with a tie to create drama and add preppiness to the look. This could be your
+            savior when in dilemma about what to wear for your dream job interview.</p>
+        <img src='assets/images/id4look4.jpg' />
+        <p class='imgDesc'>A corporate cousin of the very famous “shirt dress”. It is smart, elegant, formal as well as preppy. This could be
+            worn as a regular office wear dress and also to after work parties as well as casual dinning date with Friends.</p>
+    </div>
+    <div *ngIf="urlNum === 5">
+        <img src='assets/images/id5garment1.jpg' />
+        <img src='assets/images/id5look1.jpg' />
+        <img src='assets/images/id5look2.jpg' />
+    </div>
+    <!-- <ng-template #noResults>
+        <div class="noResults">
+            No Results Found
+        </div>
+    </ng-template> -->
+
+</ion-content>

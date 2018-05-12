@@ -1,0 +1,26 @@
+<ion-content class="login-container">
+            <div class="log-right">
+                <ion-col>
+                    <div class="cont">
+                        <ion-list>
+                            <span *ngIf="errorMessage">{{errorMessage}}</span>
+                            <ion-item>
+                                <!-- <ion-label fixed>Username</ion-label> -->
+                                <ion-input placeholder='Username' type="text" [(ngModel)]="userName" class="custom-input"></ion-input>
+                            </ion-item>
+                            <span *ngIf='(errors.userName)' class='error'>{{errors.userName}}</span>
+                            <ion-item>
+                                <!-- <ion-label fixed>Password</ion-label> -->
+                                <ion-input placeholder='Password' type="password" [(ngModel)]="password" class="custom-input"></ion-input>
+                            </ion-item>
+                            <span *ngIf='(errors.password)' class='error'>{{errors.password}}</span>
+                        </ion-list>
+                        <ion-label *ngIf='!isUserExist' class='error'>User not exists</ion-label>
+                        <button ion-button block (click)="doLogin()">Sign In</button>
+                        <div class="foot">New User?
+                            <a href='#' (click)='goToSignup()'>Sign Up</a>
+                        </div>
+                    </div>
+                </ion-col>
+            </div>
+</ion-content>

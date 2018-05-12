@@ -1,0 +1,24 @@
+<ion-header color="green">
+    <ion-navbar>
+        <ion-title>Sign Up</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-item>
+        <ion-input [(ngModel)]="name" placeholder="Name"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-input [(ngModel)]="number" placeholder="Phone Number"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-input type="password" [(ngModel)]="password" placeholder="Password"></ion-input>
+    </ion-item>
+    <ion-item>
+        <input type='date' />
+    </ion-item>
+    <ion-label>I accept "Terms and Conditions"</ion-label>
+</ion-content>
+<ion-footer>
+    <button ion-button block (click)="createAccount()">Create Account</button>
+</ion-footer>

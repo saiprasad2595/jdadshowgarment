@@ -1,0 +1,9 @@
+{
+  "name": "Indian_garment",
+  "app_id": "",
+  "API_URL": "http://127.0.0.1:9876",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

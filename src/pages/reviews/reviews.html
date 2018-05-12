@@ -1,0 +1,34 @@
+<ion-header>
+    <ion-toolbar>
+        <button class='menuFloat' left menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Reviews</ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <div *ngIf='reviewData && reviewData.length > 0'>
+        <p class='reviewTitle'> Our Reviews so far.. </p>
+        <div class="reviewCard" *ngFor='let review of reviewData'>
+            <ion-icon class='mailIcon' name="mail"></ion-icon>
+            <p class='comments'>{{review.comments}}</p>
+            <img class='reviewImg' *ngIf='review && review.reviewUrl' src="{{review.reviewUrl}}" alt='Image Unable to load' />
+            <p class='reviewName'>{{review.name}}</p>
+            <p class='email'>{{review.emailId.toLowerCase()}}</p>
+        </div>
+    </div>
+    <p class="reviewHead">We would love to hear from you:</p>
+    <div>
+        <ion-label class="labelReview">Name:</ion-label>
+        <ion-input [(ngModel)]='name' class='inputBg' placeholder='Enter your name' type='text'></ion-input>
+    </div>
+    <div>
+        <ion-label class="labelReview">Email:</ion-label>
+        <ion-input [(ngModel)]='email' class='inputBg' placeholder='Enter your email' type='email'> </ion-input>
+    </div>
+    <ion-label class="labelReview">Comments:</ion-label>
+    <textarea class='txtarea' [(ngModel)]='comments' placeholder='Enter your comments'></textarea>
+    <input  class='chooseFile' [(ngModel)]='imgUploadFile' type='file' placeholder="Upload photos" accept="image/*" (change)='uploadImg($event)'/>
+    <progress class="progress" max="100" [value]="(uploadProgress | async)"></progress>    
+    <button class='submit' (click)='submitReview()' type='submit'>Submit</button>
+</ion-content>

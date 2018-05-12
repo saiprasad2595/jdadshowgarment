@@ -1,0 +1,941 @@
+// http://ionicframework.com/docs/v2/theming/
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+// icon-fonts start
+// @font-face {
+//   font-family: "hello";
+//   src: url("./../assets/fonts/hello.ttf?l1v0tp") format("truetype"),
+//     url("./../assets/fonts/hello.woff?l1v0tp") format("woff"),
+//     url("./../assets/fonts/hello.svg?l1v0tp#hello") format("svg");
+//   font-weight: normal;
+//   font-style: normal;
+// }
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: "hello" !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$orange: rgb(255, 160, 0);
+$blue: rgb(74, 144, 226);
+$blue-purple: #5225b5;
+$teal: #00a26d;
+$coral: #ff5046;
+$bright-sky-blue: #00b7f1;
+$warm-grey: #8b8b8b;
+$white: #fff;
+/* media screens*/
+
+$break-mobile: 320px;
+$break-tab: 768px;
+$break-lap: 1200px;
+@mixin when($media) {
+    @if $media==mobile {
+        @media only screen and (min-width: $break-mobile) and (max-width: $break-tab - 1px) {
+            @content;
+        }
+    }
+    @else if $media==tab {
+        @media only screen and (min-width: $break-tab + 1px) and (max-width: $break-lap) {
+            @content;
+        }
+    }
+    @else if $media==lap {
+        @media only screen and (min-width: $break-lap) {
+            @content;
+        }
+    }
+}
+
+.icon-afternoon:before {
+    content: "\e93a";
+}
+
+.icon-evening:before {
+    content: "\e939";
+}
+
+.icon-addcalendar .path1:before {
+    content: "\e900";
+}
+
+.icon-addcalendar:before {
+    content: "\e900";
+}
+
+.icon-addcalendar .path2:before {
+    content: "\e901";
+    margin-left: -0.900390625em;
+}
+
+.icon-addcalendar .path3:before {
+    content: "\e902";
+    margin-left: -0.900390625em;
+}
+
+.icon-addmenu:before {
+    content: "\e903";
+}
+
+.icon-approvalhistory:before {
+    content: "\e904";
+}
+
+.icon-approvals:before {
+    content: "\e905";
+}
+
+.icon-assignedme:before {
+    content: "\e906";
+}
+
+.icon-award:before {
+    content: "\e907";
+}
+
+.icon-calendar:before {
+    content: "\e908";
+}
+
+.icon-checkafter:before {
+    content: "\e909";
+}
+
+.icon-checkbefore:before {
+    content: "\e90a";
+}
+
+.icon-circle:before {
+    content: "\e90b";
+}
+
+.icon-circletick:before {
+    content: "\e90c";
+}
+
+.icon-cloud .path1:before {
+    content: "\e90d";
+}
+
+.icon-cloud .path2:before {
+    content: "\e90e";
+    margin-left: -1.2626953125em;
+}
+
+.icon-coffee:before {
+    content: "\e90f";
+}
+
+.icon-cross:before {
+    content: "\e910";
+}
+
+.icon-crosscircle .path1:before {
+    content: "\e911";
+}
+
+.icon-crosscircle .path2:before {
+    content: "\e912";
+    margin-left: -1.0185546875em;
+}
+
+.icon-crosscircle .path3:before {
+    content: "\e913";
+    margin-left: -1.0185546875em;
+}
+
+.icon-dashboard:before {
+    content: "\e914";
+}
+
+.icon-down:before {
+    content: "\e915";
+}
+
+.icon-downborder:before {
+    content: "\e916";
+}
+
+.icon-downfill:before {
+    content: "\e917";
+}
+
+.icon-error:before {
+    content: "\e918";
+}
+
+.icon-filter:before {
+    content: "\e919";
+}
+
+.icon-flag:before {
+    content: "\e91a";
+}
+
+.icon-horizantaldotscircle .path1:before {
+    content: "\e91b";
+}
+
+.icon-logout:before {
+    content: "\e93b";
+}
+
+.icon-horizantaldotscircle .path2:before {
+    content: "\e91c";
+    margin-left: -1em;
+}
+
+.icon-horizontaldots:before {
+    content: "\e91d";
+}
+
+.icon-left:before {
+    content: "\e91e";
+}
+
+.icon-leftdouble:before {
+    content: "\e91f";
+}
+
+.icon-logo:before {
+    content: "\e920";
+}
+
+.icon-message:before {
+    content: "\e921";
+}
+
+.icon-mobilemenu:before {
+    content: "\e922";
+}
+
+.icon-notification:before {
+    content: "\e923";
+}
+
+.icon-plus:before {
+    content: "\e924";
+}
+
+.icon-profile:before {
+    content: "\e925";
+}
+
+.icon-return:before {
+    content: "\e926";
+}
+
+.icon-returncircle .path1:before {
+    content: "\e927";
+}
+
+.icon-returncircle .path2:before {
+    content: "\e928";
+    margin-left: -1em;
+}
+
+.icon-returncircle .path3:before {
+    content: "\e929";
+    margin-left: -1em;
+}
+
+.icon-right:before {
+    content: "\e915";
+    content: "\e92a";
+}
+
+.icon-rightdouble:before {
+    content: "\e92b";
+}
+
+.icon-search:before {
+    content: "\e92c";
+}
+
+.icon-starafter:before {
+    content: "\e92d";
+}
+
+.icon-starbefore:before {
+    content: "\e92e";
+}
+
+.icon-tasklist:before {
+    content: "\e92f";
+}
+
+.icon-taskmaster:before {
+    content: "\e930";
+}
+
+.icon-tick:before {
+    content: "\e931";
+}
+
+.icon-tickcircle .path1:before {
+    content: "\e932";
+}
+
+.icon-tickcircle .path2:before {
+    content: "\e933";
+    margin-left: -1.0185546875em;
+}
+
+.icon-tickcircle .path3:before {
+    content: "\e934";
+    margin-left: -1.0185546875em;
+}
+
+.icon-up:before {
+    content: "\e935";
+}
+
+.icon-upborder:before {
+    content: "\e936";
+}
+
+.icon-upfill:before {
+    content: "\e937";
+}
+
+.icon-verticaldots:before {
+    content: "\e938";
+}
+
+// icon-fonts start
+// text-fonts start
+@font-face {
+    font-family: "Arial-ItalicMT";
+    src: url("./../fonts/Arial-ItalicMT.eot");
+    src: url("./../fonts/Arial-ItalicMT.eot?#iefix") format("embedded-opentype"), url("./../fonts/Arial-ItalicMT.woff") format("woff"), url("./../fonts/Arial-ItalicMT.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Arial";
+    src: url("./../assets/fonts/Arial.eot");
+    src: url("./../assets/fonts/Arial.eot?#iefix") format("embedded-opentype"), url("./../assets/fonts/Arial.woff") format("woff"), url("./../assets/fonts/Arial.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Arial-BoldMT";
+    src: url("./../assets/fonts/Arial-BoldMT.eot");
+    src: url("./../assets/fonts/Arial-BoldMT.eot?#iefix") format("embedded-opentype"), url("./../assets/fonts/Arial-BoldMT.woff") format("woff"), url("./../assets/fonts/Arial-BoldMT.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+// text-fonts end
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+    text-transform: capitalize;
+    background: #fafafa;
+    -webkit-overflow-scrolling: touch;
+}
+
+.scroll-content {
+    background: #fafafa;
+    overflow: hidden;
+}
+
+.scrollable-container {
+    width: calc(100% - 285px);
+    float: right;
+    height: calc(100vh - 180px);
+    position: relative;
+    top: 80px;
+    overflow-y: auto;
+}
+
+// scroll bar css
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: none;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar {
+    // width: 6px;
+    width: 0px;
+    height: 6px;
+    background-color: #fafafa;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+    background-color: #fafafa;
+}
+
+// global
+input:focus {
+    outline: none;
+}
+
+.global-page-pad {
+    margin: 0px 20px 0px 100px;
+}
+
+.clear-all {
+    clear: both;
+    font-family: "Roboto-Regular";
+}
+
+.purple-color {
+    color: #5225b5 !important;
+}
+
+.archive-button {
+    text-transform: uppercase;
+    color: #fff;
+    background: #5225b5;
+    padding: 3px 5px;
+    font-size: 9px;
+    margin: 0 5px;
+    border-radius: 20px;
+}
+
+.selected-list {
+    .c-btn {
+        margin-left: 10px;
+        padding: 3px 10px !important;
+        box-shadow: none !important;
+        border-radius: 0px;
+    }
+}
+
+.custom-head {
+    ion-navbar {
+        min-height: 80px;
+    }
+    .toolbar-background {
+        background: #ffffff !important;
+    }
+    ion-title {
+        .toolbar-title {
+            font-size: 40px;
+        }
+        span {
+            font-weight: bold;
+        }
+        ul {
+            li {
+                span {
+                    font-size: 35px;
+                    font-weight: normal;
+                    padding: 0px;
+                }
+            }
+        }
+    }
+}
+
+// main
+.info.empty {
+    display: flex;
+    align-items: center !important;
+}
+
+.purple_color {
+    color: #5225b5;
+}
+
+.icon-profile {
+    font-weight: bold !important;
+}
+
+.activeTab {
+    position: relative;
+    color: #ffffff;
+    background-color: #233342;
+}
+
+$blue-purple: #5225b5;
+$white: #fff;
+$black: #000;
+$sunflower-yellow: #76ce91;
+.side-bar {
+    display: inline-block;
+    position: absolute;
+    z-index: 8;
+    height: calc(100vh - 70px);
+    top: 70px;
+    left: 91px;
+}
+
+// check list
+.check-list-btn {
+    background: #a2cc3e;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 8px 16px;
+}
+
+header-options {
+    .icon-add {
+        display: none;
+    }
+}
+
+// media query for all mobiles
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .card-content-md {
+        padding: 7px !important;
+    }
+    .plusIcon {
+        display: inline-block !important;
+    }
+    taskboard .app-view .status-filters .status-name .count {
+        margin: 0px 5px;
+        padding: 0px;
+    } // side nav bar
+    .navbar-hide {
+        display: block;
+    }
+    .side-container {
+        display: none;
+    }
+    .side-menu {
+        top: auto;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        padding: 0;
+        ul {
+            margin: 0px;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: space-between;
+            li {
+                padding: 8px;
+                margin: 0px;
+                flex: 1;
+            }
+            li div:nth-child(1) {
+                font-size: 20px;
+            }
+            li div:nth-child(2) {
+                font-size: 10px;
+                text-transform: uppercase;
+            }
+        }
+        .activeTab:after {
+            display: none;
+        }
+    } // task select
+    task-select {
+        display: none;
+    }
+    .global-page-pad {
+        margin: 5px 0px 90px 0px !important;
+    } // header
+    .custom-head ion-navbar {
+        min-height: 50px;
+    }
+    header-options {
+        .icon-add {
+            display: block;
+        }
+    }
+    .custom-head {
+        ion-title {
+            padding: 0px;
+        }
+        .main-head {
+            font-size: 24px;
+            padding: 0px 20px;
+            align-items: center;
+            .title {
+                span {
+                    padding: 0px;
+                    display: flex;
+                    font-size: 20px !important;
+                }
+            }
+            ul li {
+                float: right !important;
+                header-options {
+                    span {
+                        font-size: 20px !important;
+                        padding-left: 15px;
+                    }
+                }
+            }
+            span {
+                display: inline-block;
+                font-size: 15px !important;
+                margin-left: 0px !important;
+            }
+            button {
+                display: none;
+            }
+        }
+    }
+    #ymDivCircle {
+        bottom: 100px !important;
+    } // dashboard
+    dashboard {
+        .card-content-ios {
+            padding: 13px 16px 0px;
+        }
+        .scroll-content {
+            overflow-y: hidden; // background: linear-gradient(311deg, rgba(25, 255, 255, .6), rgba(101, 98, 98, .6) 7%, rgba(158, 141, 141, .6) 79%, rgba(0, 0, 0, 0.6));
+        }
+        .global-page-pad.scroll-c {
+            height: 100vh;
+            overflow-y: auto;
+            margin-bottom: 45px !important;
+            padding-bottom: 20px;
+        }
+        .custom-level-card ion-card-content {
+            width: 100%;
+            float: none;
+        }
+        .custom-level-card ion-card-content .response-block .overall-text,
+        .custom-level-card ion-card-content .response-block .response-text {
+            font-size: 10px;
+        }
+        .custom-level-card ion-card-content .response-block .overall-percent,
+        .custom-level-card ion-card-content .response-block .response-time {
+            font-size: 20px;
+        }
+        .custom-level-card ion-card-content .master-level-block .target-text {
+            padding: 4px 0px;
+        }
+        .custom-level-card ion-card-content .master-level-block .level-points {
+            margin-bottom: 4px;
+        }
+        .custom-level-card {
+            background: transparent;
+            box-shadow: none;
+            margin: 0px;
+            width: 100%;
+            .level-head {
+                font-size: 14px !important;
+            }
+            .level-name {
+                font-size: 20px !important;
+            }
+            .master-level-block,
+            .response-block .response-box {
+                margin-right: 0px !important;
+            }
+            .response-block {
+                position: unset !important;
+            }
+        }
+        .range-ios .range-knob-handle {
+            display: none;
+        }
+        .range-ios .range-bar {
+            height: 4px;
+            top: 5px;
+        }
+        .range-ios .range-slider {
+            height: 12px;
+        }
+        .range-ios {
+            padding: 0px;
+        }
+        .card-mobile {
+            display: block !important;
+        }
+        .card-desktop {
+            display: none !important;
+        }
+        .show-time {
+            font-size: 24px;
+            font-weight: normal;
+        }
+        .show-date {
+            font-size: 16px;
+            font-weight: normal;
+            margin: 5px 0px;
+        }
+        .show-location {
+            font-size: 15px;
+            .icon-weather {
+                font-size: 20px;
+            }
+        }
+        .show-greetings {
+            margin-top: 10px;
+            .icon-coffee,
+            .icon-afternoon,
+            .icon-evening {
+                font-size: 30px;
+            }
+            .greetings {
+                font-size: 20px;
+                span {
+                    font-size: 18px;
+                }
+            }
+            .greetings-text {
+                font-size: 12px;
+            }
+        }
+        .wi-sunrise:before {
+            font-size: 30px;
+        }
+        .today-row {
+            margin-top: 0px !important;
+        }
+        .custom-today-card {
+            width: 100%;
+            .today-view-btn {
+                top: calc(50% - 9px) !important;
+                height: 2em;
+            }
+        }
+        ion-card-content {
+            padding-left: 5px !important;
+            padding-right: 5px !important;
+        }
+        .custom-today-card .task-list-block .list-box.col {
+            margin-right: 3px;
+            min-height: auto;
+            .list-name {
+                font-size: 8px;
+                min-height: 35px;
+            }
+            .list-value {
+                font-size: 20px;
+            }
+        }
+        .list-details {
+            width: 100%;
+        }
+        .custom-level-card ion-card-content .leaderboard-list {
+            min-height: 57px;
+        }
+    } // end dashboard
+    .today-block {
+        .note-icon-box {
+            font-size: 28px !important;
+        }
+        span {
+            font-size: 28px !important;
+        }
+        .today-head {
+            font-size: 14px !important;
+        }
+        .today-value {
+            font-size: 20px !important;
+        }
+    }
+    .today-view-btn {
+        font-size: 10px !important;
+        span {
+            font-size: 10px !important;
+        }
+    }
+    .overdue-block {
+        p {
+            font-size: 10px !important;
+        }
+    }
+}
+
+// media query for all mobiles
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .login-container .copy-right {
+        bottom: 10px !important;
+    }
+    .bar-button-default-ios {
+        color: #000;
+    }
+    .login-container .custom-input input {
+        height: 27px;
+    }
+    .login-container .log-right {
+        padding: 20px !important;
+        margin: 15px;
+    }
+    .login-container .log-right .head h2 {
+        margin: 0 !important;
+    }
+    .login-container {
+        .log-left {
+            width: 100% !important;
+            background: transparent !important;
+            padding: 0 !important;
+            h2 {
+                font-size: 40px !important;
+            }
+            .logo {
+                font-size: 40px !important;
+                text-align: left;
+            }
+        }
+        .log-right {
+            width: 100% !important;
+        }
+    }
+    task-select,
+    task-filter {
+        display: none;
+    }
+    .global-page-pad {
+        margin: 5px 10px 0px 10px;
+    }
+    .scrollable-container {
+        width: 100%;
+        height: calc(100vh - 130px);
+        top: 0px;
+    }
+    .custom-today-card {
+        .task-list-block {
+            margin: 10px 0px !important;
+        }
+    } // create task
+    createtask {
+        .task-container {
+            margin: 0px !important;
+            padding: 0px !important;
+        }
+        .task-head {
+            font-size: 14px !important;
+            text-align: left !important;
+            padding-left: 15px !important;
+        }
+        .custom-grid {
+            padding: 10px !important;
+            .input-section {
+                width: 100%;
+            }
+            .task-input {
+                margin-bottom: 10px !important;
+                .input-head-group {
+                    .flag-head {
+                        font-size: 14px !important;
+                    }
+                }
+                h3 {
+                    font-size: 14px !important;
+                }
+                input,
+                .c-btn {
+                    height: 30px !important;
+                    font-size: 14px !important;
+                }
+            }
+            ion-datetime {
+                padding: 2px 10px !important;
+                height: 30px;
+            }
+            .custom-date {
+                margin: 15px 0px !important;
+                .item-inner {
+                    border-bottom: 0px !important;
+                }
+                [class^="icon"] {
+                    font-size: 20px !important;
+                    top: 26px !important;
+                }
+            }
+        }
+        .check-list-btn {
+            font-size: 14px !important;
+            min-width: 100% !important;
+        }
+        .chck-l-main {
+            width: 100% !important;
+            margin-bottom: 20px !important;
+        }
+        .notes-grp {
+            margin: 10px 0px 20px !important;
+            .notes-area {
+                width: 100% !important;
+                textarea {
+                    margin-left: 0px !important;
+                }
+            }
+        }
+        .choose-file {
+            margin: 10px 0px 20px !important;
+        }
+        .foo-btn {
+            margin: 5px 0px !important;
+            .save-btn,
+            .cancel {
+                margin: 5px !important;
+                min-width: 50px !important;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .login-container {
+        .log-left {
+            width: 65% !important;
+        }
+    }
+}
+
+a[disabled],
+button[disabled],
+[ion-button][disabled] {
+    cursor: default;
+    opacity: 0.4;
+    color: #5225b5;
+    pointer-events: none;
+    background: transparent;
+}
+
+.selected-list[_ngcontent-c9] .c-btn[_ngcontent-c9] {
+    background: none;
+}
+
+.washContent {
+    background-color: #F0D681 !important;
+}
+
+.menuItem {
+    color: #5f2519;
+    font-size: 18px;
+    text-align: left;
+    margin-left: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.menuItem p {
+    margin: 0px 0px 10px 0px;
+}
+
+.washList {
+    margin-top: 10px;
+}
+
+.menu-inner {
+    border-left: 1px solid;
+    border-top: 1px solid;
+    border-right: 1px solid;
+}

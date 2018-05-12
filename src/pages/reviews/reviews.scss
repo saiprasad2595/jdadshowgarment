@@ -1,0 +1,117 @@
+.inputBg {
+    background-color: #F0D681;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    border-bottom: 0.5px solid rgb(95, 37, 25);
+}
+
+.labelReview {
+    font-size: 16px;
+    margin-left: 8px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 0px;
+}
+
+.txtarea {
+    width: 90%;
+    background-color: #F0D681;
+    height: 150px;
+    border: 0.5px solid rgb(95, 37, 25);
+    margin-left: 8px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 2px;
+}
+
+textarea::placeholder {
+    color: #743526;
+}
+
+.text-input::-moz-placeholder {
+    color: #743526;
+}
+
+.text-input::placeholder {
+    color: #743526;
+}
+
+.submit {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 21px;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    margin-left: 8px;
+    color: #743526;
+    background-color: #F0D681;
+    border: 0.5px solid rgb(95, 37, 25);
+    margin-bottom: 12px;
+}
+
+.text-input-ios {
+    margin-left: 8px !important;
+}
+
+.reviewCard {
+    margin-right: 8px;
+    background-color: #dec571;
+    border-radius: 5px;
+    padding-left: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 8px;
+    margin-bottom: 8px;
+}
+
+.email {
+    text-transform: lowercase;
+    margin-top: 0px;
+}
+
+.reviewName {
+    margin: 0px 0px 2px 0px;
+    font-weight: bold;
+    color: #5f2519;
+}
+
+.comments {
+    margin-top: 0px; // padding-top: 5px;
+}
+
+.reviewTitle {
+    font-size: 18px;
+    font-weight: bold;
+    color: #5f2519;
+    margin: 8px;
+}
+
+.mailIcon {
+    font-size: 45px;
+    text-align: center;
+    color: #5f2519;
+}
+
+.reviewHead {
+    color: #5f2519;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 8px;
+    text-transform: none;
+}
+.reviewImg{
+    height: 210px;
+}
+.chooseFile{
+    margin-left: 8px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    background-color: #F0D681;
+    color: #5f2519;
+}
+progress::-webkit-progress-value { background: #5f2519; }
+.progress{
+    margin-left: 8px;
+}
