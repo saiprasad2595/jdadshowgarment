@@ -56,11 +56,7 @@ const initial: IGarmentState = {
         id: 1,
         imgUrls: [],
         washInstructions: [
-            'Acetate: Hand Wash — Air Dry.',
-            'Cotton: Hot Water Wash — Tumble Dry Warm.',
-            'Linen: Cool Water Wash — Air Dry.',
-            'Polyester: Cool Water Wash — Tumble Dry Warm or Air Dry.',
-            'Silk: Hand Wash or Cool Warm Wash — Tumble Dry Cool or Air Dry.',
+            'The top and bottom garments has to be dry cleaned'
         ],
         styleInstructions: [
             'Textile apparel worn to cover or protect the body',
@@ -73,11 +69,7 @@ const initial: IGarmentState = {
         id: 2,
         imgUrls: [],
         washInstructions: [
-            'Wool: Hand Wash — Air Dry.',
-            'Spandex: Hand Wash — Air Dry.',
-            'Silk: Hand Wash or Cool Warm Wash — Tumble Dry Cool or Air Dry.',
-            'Polyester: Cool Water Wash — Tumble Dry Warm or Air Dry.',
-            'Linen: Cool Water Wash — Air Dry.',
+            'The garment should be dry cleaned'
         ],
         styleInstructions: [
             'Piece goods sold for making apparel at home',
@@ -90,9 +82,8 @@ const initial: IGarmentState = {
         id: 3,
         imgUrls: [],
         washInstructions: [
-            'Silk: Hand Wash or Cool Warm Wash — Tumble Dry Cool or Air Dry.',
-            'Polyester: Cool Water Wash — Tumble Dry Warm or Air Dry.',
-            'Linen: Cool Water Wash — Air Dry.',
+            'The top garment has to be dry cleaned.',
+            'The bottom garment can be washed'
         ],
         styleInstructions: [
             'In some cases, experience and industry expertise serve as a reasonable basis',
@@ -104,10 +95,10 @@ const initial: IGarmentState = {
         id: 4,
         imgUrls: [],
         washInstructions: [
-            'Upper garment should be dry cleaned',
-            'inner garment can be washed'
+            'The Upper garment should be dry cleaned',
+            'The Inner garment can be washed'
         ],
-        
+
         styleInstructions: [
             'In some cases, experience and industry expertise serve as a reasonable basis',
             'In other cases — for example, if you use a dye that is known to bleed, or beads that are known to be damaged in drycleaning',
@@ -118,9 +109,7 @@ const initial: IGarmentState = {
         id: 5,
         imgUrls: [],
         washInstructions: [
-            'Silk: Hand Wash or Cool Warm Wash — Tumble Dry Cool or Air Dry.',
-            'Polyester: Cool Water Wash — Tumble Dry Warm or Air Dry.',
-            'Linen: Cool Water Wash — Air Dry.',
+            'The garment should be dry cleaned'
         ],
         styleInstructions: [
             'In some cases, experience and industry expertise serve as a reasonable basis',
@@ -132,9 +121,8 @@ const initial: IGarmentState = {
         id: 6,
         imgUrls: [],
         washInstructions: [
-            'Silk: Hand Wash or Cool Warm Wash — Tumble Dry Cool or Air Dry.',
-            'Polyester: Cool Water Wash — Tumble Dry Warm or Air Dry.',
-            'Linen: Cool Water Wash — Air Dry.',
+            'The upper garment can be washed',
+            'The lower garment should be dry cleaned'
         ],
         styleInstructions: [
             'In some cases, experience and industry expertise serve as a reasonable basis',

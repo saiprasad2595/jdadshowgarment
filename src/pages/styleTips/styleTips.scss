@@ -17,6 +17,7 @@ li {
 
 .scroll-content {
     overflow: scroll;
+    height: 100% !important;
 }
 
 .imgDesc {
@@ -25,4 +26,8 @@ li {
     margin-left: 8px;
     margin-right: 8px;
     text-transform : initial;
+}
+
+.screenbtm{
+    padding-bottom: 50px;
 }

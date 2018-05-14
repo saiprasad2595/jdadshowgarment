@@ -7,14 +7,29 @@
     </ion-toolbar>
 </ion-header>
 <ion-content>
-    <!-- <ul *ngIf='styleDetails;else noResults'>
-        <li *ngFor='let styleTip of styleDetails.styleInstructions'>
-            {{styleTip}}</li>
-    </ul> -->
+    <div *ngIf="urlNum === 1">
+        <img src='assets/images/id1garment1.jpg' />
+        <p class="imgDesc">This is a strong, preppy and a formal look.  It's a perfect balance of symmetry and A symmetry. This look signifies strength and power of a women.  This could be worn at daily office wear.</p>
+        <img src='assets/images/id1look1.jpg' />
+        <p class="imgDesc">This is a stylish, lively , spunky and vibrant look.  A perfect dress that signifies firmness and mettle. Best suited for evening parties and fashion events.</p>
+        <img src='assets/images/id1look2.jpg' />
+        <p class="imgDesc">This is a preppy, smart, and formal look which gives the feels of "BACK TO SCHOOL." This look is suitable for office wear and formal functions.</p>
+        <img src='assets/images/id1look3.jpg' />
+        <p class="imgDesc screenbtm">This is a relaxed, casual and vacation look.  This look makes you explore the wander lust. This is comfortable and fashionable at the same time it is suitable for the leisure time and travels.</p>
+    </div>
+    <div *ngIf="urlNum === 2">
+        <img src='assets/images/id2garment2.jpg' />
+        <p class="imgDesc">This is a fashionable, ultra modern and contemporary look.  This works very well for the gala events and also for the institutional occasions.</p>
+        <img src='assets/images/id2look1.jpg' />
+        <p class='imgDesc screenbtm'>A modish and trendy look. It's great for te get togethers with friends and also for college reunions.</p>
+    </div>
     <div *ngIf="urlNum === 3">
         <img src='assets/images/id3garment1.jpg' />
+        <p class='imgDesc'>This look is smart, powerful, bold and formal with a twist.  This could be worn to office, business meeting after parties with colleagues and friends.</p>
         <img src='assets/images/id3look1.jpg' />
+        <p class='imgDesc'>This is a relaxed, comfortable, day wear, best suited for shopping with friends or any casual day out. You can also flaunt this perfect fusion of casual and formal for all the coffee dates in summer evenings.</p>
         <img src='assets/images/id3look2.jpg' />
+        <p class='imgDesc screenbtm'>This is a semi formal, smart and sheek look. This can be called a confidence booster. It is a must to be followed look for the late night parties with friends and also the relaxing after parties after a long entire corporate event.</p>
     </div>
     <div *ngIf="urlNum === 4">
         <img src='assets/images/garment1.jpg' />
@@ -35,13 +50,18 @@
     </div>
     <div *ngIf="urlNum === 5">
         <img src='assets/images/id5garment1.jpg' />
+        <p class="imgDesc">This defines the playfulness of the wearer Eden in the most formal set up. The colour blocking and the balance created by using contrasting fabrics and textures is very interesting to look at.  This could be the Friday dressing for the corporates and can work well for the Friday evenings only with the add id statement earrings/ neck pieces.</p>
         <img src='assets/images/id5look1.jpg' />
+        <p class="imgDesc">This is a very pretty, feminine and elegant look which keeps you in your higher spirits The colours work in every season. It could be worn for formal dinner parties with family.</p>
         <img src='assets/images/id5look2.jpg' />
+        <p class="imgDesc screenbtm">This is a bold, casual, fun living and a lively look.  Perfect for the day outings for the trans seasons. It could be worn for the chit chat it get together with forever buddies.</p>
     </div>
-    <!-- <ng-template #noResults>
-        <div class="noResults">
-            No Results Found
-        </div>
-    </ng-template> -->
-
+    <div *ngIf="urlNum === 6">
+        <img src='assets/images/id6garment3.jpg' />
+        <p class='imgDesc'>It is a formal, contemporary and office wear perfect for client meetings as well as it can be paired with any kind of shoes.</p>
+        <img src='assets/images/id6look1.jpg' />
+        <p class='imgDesc'>Modern, retro, Sheek  and clean. That's what the silhouette is.  The look is designed for the modern day women who now understands herself clearer than ever.  This look is suitable for formal officials ce wear as well as after parties. Just put on big hoops and you are good to go.</p>
+        <img src='assets/images/id6look2.jpg' />
+        <p class='imgDesc screenbtm'>This is a confident, formal and a preppy look for the cool headed women and firm at the same time. Best suited for the powerful manager who lead their teams with examples.</p>
+    </div>
 </ion-content>
